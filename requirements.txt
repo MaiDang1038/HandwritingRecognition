@@ -1,1 +1,12 @@
 scikit-learn==1.4.1.post1
+numpy==1.26.0
+opencv-contrib-python==4.9.0.80
+opencv-python==4.9.0.80
+Pillow==10.0.1
+tensorflow==2.16.1
+streamlit==1.27.1  
+streamlit-drawable-canvas==0.9.3
+
+matplotlib==3.8.2 
+pandas==2.1.1
+plotly==5.21.0

@@ -107,29 +107,6 @@ if st.button("Train", key=None, type="secondary", use_container_width=True):
     test_accuracy_rounded = round(test_accuracy*100,0)
     st.success(f'Training time: {train_time}s. Train accuracy: {train_accuracy_rounded}%. Test accuracy: {test_accuracy_rounded}%')
 
-    # Draw Loss and Accuracy Graphs
-    # history_dict = history.history
-    # history_dict['val_loss'] = [val_loss] 
-    # history_dict['val_accuracy'] = [val_accuracy] 
-    # col3, col4 = st.columns(2)
-
-    # with col3:
-    #     train_loss = history_dict['loss']
-    #     val_loss = history_dict['val_loss']
-    #     graph_data = [train_loss, val_loss]
-    #     group_labels = ['Train Loss', 'Val Loss']
-    #     fig = ff.create_distplot(
-    #         graph_data, group_labels, bin_size=[.3, .3])
-    #     st.plotly_chart(fig, use_container_width=True)
-    # with col3:
-    #     train_accuracy = history_dict['accuracy']
-    #     val_loss = history_dict['val_accuracy']
-    #     graph_data = [train_accuracy, val_accuracy]
-    #     group_labels = ['Train Accuracy', 'Val Accuracy']
-    #     fig = ff.create_distplot(
-    #         graph_data, group_labels, bin_size=[.3, .3])
-    #     st.plotly_chart(fig, use_container_width=True)
-
     # Prediction
     st.subheader('Prediction:')
     number_to_letter = {0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E', 5: 'F', 6: 'G', 7: 'H', 8: 'I', 9: 'J',
